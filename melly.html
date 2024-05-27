@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== Fav ======== -->
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    <script src="user.js"></script>
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>BeatsWRLD - download free music</title>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text" style="padding-top: 10px;">
+                <span class="image">
+                    <a href="index.html"><img src="./imgs/logo.png" alt=""></a>
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name" style="
+                        background: linear-gradient(5deg, #FF00FF, #800080);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent; font-size: larger;
+                    "><a href="index.html">BeatsWrld</a></span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle' style="color: #ddd;"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box" />
+                <a href="index.html" title="Home">
+                    <i class='bx bx-home-alt icon'></i>
+                    <span class="text nav-text">Home</span>
+                </a>
+                </li>
+                </li>
+
+                <ul class="menu-links">
+
+
+                    <li class="nav-link">
+                        <a href="music.html" title="Music">
+                            <i class='bx bx-music icon'></i>
+                            <span class="text nav-text">Music</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="artists.html" title="Artists">
+                            <i class='bx bx-microphone icon'></i>
+                            <span class="text nav-text">Artists</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="albums.html" title="Albums">
+                            <i class='bx bx-album icon'></i>
+                            <span class="text nav-text">Albums</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="mixtapes.html" title="Mixtapes">
+                            <i class='bx bx-headphone icon'></i>
+                            <span class="text nav-text">Mixtapes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="news.html" title="Music News">
+                            <i class='bx bx-radio icon'></i>
+                            <span class="text nav-text">Music News</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+
+
+        <header>
+            <nav class="nav-container">
+                <div class="melly" style="display: flex; align-items: center;justify-content: space-evenly;">
+                    <div class="imgg">
+                        <img src="imgs/melly.jpeg" alt="">
+                    </div>
+                    <div class="helly">
+                        <div class="p1">
+                            <h3 style="color: var(--text-color);">YWN Melly</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quod quia suscipit nobis, accusantium temporibus voluptatibus quasi rerum qui molestiae!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quod quia suscipit nobis, accusantium temporibus voluptatibus quasi rerum qui molestiae!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quod quia suscipit nobis, accusantium temporibus voluptatibus quasi rerum qui molestiae!</p>    
+                        </div>
+                        <div class="p2">
+                            <a href="" class="btnn">Download <i class='bx bx-play play-btn'></i></a>
+                            <a href="" class="btnn">Play <i class='bx bx-play play-btn'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <style>
+            /* section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+} */
+
+            section:nth-of-type(1) {
+                background-color: var(--body-color);
+            }
+
+            section:nth-of-type(2) {
+                background-color: var(--body-color);
+            }
+
+            section:nth-of-type(3) {
+                background-color: var(--body-color);
+            }
+
+            section:nth-of-type(4) {
+                background-color: var(--body-color);
+            }
+
+            section:nth-of-type(5) {
+                background-color: var(--body-color);
+            }
+
+            .section-heading {
+                position: sticky;
+                top: 0;
+                width: 100%;
+                background-color: transparent;
+                background-color: var(--primary-color-light-u);
+                border-left: 4px solid var(--body-color);
+                transition: bottom 0.4s ease-in-out;
+                /* Smooth transition */
+                backdrop-filter: blur(10px);
+                box-shadow: 0 0 3px black;
+                z-index: 999;
+                padding: 7px 15px;
+            }
+
+            .section-heading h2 {
+                margin: 5px 0;
+                color: var(--text-color);
+            }
+
+            .section-content {
+                padding: 3rem;
+                height: 93.7vh
+            }
+        </style>
+        <section>
+            <div class="section-heading">
+                <h2 class="textx">Header 1</h2>
+            </div>
+            <section>
+                <section class="cards">
+
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Murder on my M...</h3>
+                                <p id="rev"><a href="melly.html" class="we">YWN Melly</a></p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Murder on my mind - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn'
+                                        data-src="Murder on my mind - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Suicidal</h3>
+                                <p id="rev">YWN Melly</p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Suicidal - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn' data-src="Suicidal - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Murder on my M...</h3>
+                                <p id="rev"><a href="melly.html" class="we">YWN Melly</a></p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Murder on my mind - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn'
+                                        data-src="Murder on my mind - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Suicidal</h3>
+                                <p id="rev">YWN Melly</p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Suicidal - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn' data-src="Suicidal - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Murder on my M...</h3>
+                                <p id="rev"><a href="melly.html" class="we">YWN Melly</a></p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Murder on my mind - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn'
+                                        data-src="Murder on my mind - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Suicidal</h3>
+                                <p id="rev">YWN Melly</p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Suicidal - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn' data-src="Suicidal - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Murder on my M...</h3>
+                                <p id="rev"><a href="melly.html" class="we">YWN Melly</a></p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Murder on my mind - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn'
+                                        data-src="Murder on my mind - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Suicidal</h3>
+                                <p id="rev">YWN Melly</p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Suicidal - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn' data-src="Suicidal - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <a href="coming.html" class="ad"
+                    style="width: 100%; margin-top: 80px;  display: flex; justify-content: center;">
+                    <img src="send/adv.jpg" alt="" width="100%" max-height="130px">
+                </a>
+            </section>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <h2 class="textx">Header 1</h2>
+            </div>
+            <section>
+                <section class="cards">
+
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Murder on my M...</h3>
+                                <p id="rev"><a href="melly.html" class="we">YWN Melly</a></p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Murder on my mind - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn'
+                                        data-src="Murder on my mind - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Suicidal</h3>
+                                <p id="rev">YWN Melly</p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Suicidal - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn' data-src="Suicidal - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Murder on my M...</h3>
+                                <p id="rev"><a href="melly.html" class="we">YWN Melly</a></p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Murder on my mind - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn'
+                                        data-src="Murder on my mind - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Suicidal</h3>
+                                <p id="rev">YWN Melly</p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Suicidal - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn' data-src="Suicidal - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Murder on my M...</h3>
+                                <p id="rev"><a href="melly.html" class="we">YWN Melly</a></p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Murder on my mind - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn'
+                                        data-src="Murder on my mind - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Suicidal</h3>
+                                <p id="rev">YWN Melly</p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Suicidal - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn' data-src="Suicidal - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Murder on my M...</h3>
+                                <p id="rev"><a href="melly.html" class="we">YWN Melly</a></p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Murder on my mind - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn'
+                                        data-src="Murder on my mind - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Suicidal</h3>
+                                <p id="rev">YWN Melly</p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Suicidal - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn' data-src="Suicidal - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <a href="coming.html" class="ad"
+                    style="width: 100%; margin-top: 80px;  display: flex; justify-content: center;">
+                    <img src="send/adv.jpg" alt="" width="100%" max-height="130px">
+                </a>
+            </section>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <h2 class="textx">Header 1</h2>
+            </div>
+            <section>
+                <section class="cards">
+
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Murder on my M...</h3>
+                                <p id="rev"><a href="melly.html" class="we">YWN Melly</a></p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Murder on my mind - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn'
+                                        data-src="Murder on my mind - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Suicidal</h3>
+                                <p id="rev">YWN Melly</p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Suicidal - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn' data-src="Suicidal - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Murder on my M...</h3>
+                                <p id="rev"><a href="melly.html" class="we">YWN Melly</a></p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Murder on my mind - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn'
+                                        data-src="Murder on my mind - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Suicidal</h3>
+                                <p id="rev">YWN Melly</p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Suicidal - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn' data-src="Suicidal - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Murder on my M...</h3>
+                                <p id="rev"><a href="melly.html" class="we">YWN Melly</a></p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Murder on my mind - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn'
+                                        data-src="Murder on my mind - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Suicidal</h3>
+                                <p id="rev">YWN Melly</p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Suicidal - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn' data-src="Suicidal - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Murder on my M...</h3>
+                                <p id="rev"><a href="melly.html" class="we">YWN Melly</a></p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Murder on my mind - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn'
+                                        data-src="Murder on my mind - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imj">
+                            <img src="preview-page1-removebg-preview.png" alt="Song 2">
+                        </div>
+                        <div class="j">
+                            <div class="name">
+                                <h3 id="dev">Suicidal</h3>
+                                <p id="rev">YWN Melly</p>
+                            </div>
+                            <div class="i">
+                                <a class="toggle-overlay">
+                                    <i class='bx bx-chevron-down g'></i>
+                                </a>
+                            </div>
+                            <div class="over">
+                                <a class="close-overlay k">
+                                    <i class='bx bx-x o'></i>
+                                </a>
+                                <h4>Play and Download</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae deserunt
+                                    rem
+                                    magnam provident labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus,
+                                    expedita.</p>
+                                <audio id="audio" src="Suicidal - YWN melly.mp3"></audio>
+                                <div class="ico">
+                                    <i class='bx bx-play g play-btn'></i>
+                                    <i class='bx bxs-download g download-btn' data-src="Suicidal - YWN melly.mp3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <a href="coming.html" class="ad"
+                    style="width: 100%; margin-top: 80px;  display: flex; justify-content: center;">
+                    <img src="send/adv.jpg" alt="" width="100%" max-height="130px">
+                </a>
+            </section>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <h2 class="textx">Header 1</h2>
+            </div>
+            <section>
+                <section class="void">
+                    <div class="video-container">
+                        <div id="main-video" class="video">
+                            <!-- Main video will be loaded here -->
+                        </div>
+                        <div class="thumb-nav">
+                            <div class="thumbnail" data-video-id="https://youtu.be/hqDinxaPUK4">
+                                <img class="rex" src="—Pngtree—guitar music wave wallpaper dark_15486962 (1).jpg" alt="Video 1">
+                            </div>
+                            <div class="thumbnail" data-video-id="VIDEO_ID_2">
+                                <img class="rex" src="—Pngtree—purple minimalist music note banner_1089759.jpg" alt="Video 2">
+                            </div>
+                            <div class="thumbnail" data-video-id="VIDEO_ID_3">
+                                <img class="rex" src="—Pngtree—blue carbon background with sport_1200848 (1).jpg" alt="Video 3">
+                            </div>
+                            <!-- Add more thumbnails as needed -->
+                        </div>
+                    </div>
+
+                    <style>
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: var(--sidebar-color);
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.thumb-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    margin: 0 10px;
+    cursor: pointer;
+    background: var(--sidebar-color);
+    padding: 5px;
+}
+
+.thumbnail img {
+    width: 100px;
+    height: 56px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.thumbnail img:hover {
+    border-color: var(--primary-color);
+}
+
+                    </style>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+    const mainVideoContainer = document.getElementById('main-video');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+
+    // Function to load the video into the main video container
+    function loadVideo(videoId) {
+        mainVideoContainer.innerHTML = `
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        `;
+    }
+
+    // Set the first video as the default video
+    const firstVideoId = thumbnails[0].getAttribute('data-video-id');
+    loadVideo(firstVideoId);
+
+    // Add click event listeners to thumbnails
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function () {
+            const videoId = this.getAttribute('data-video-id');
+            loadVideo(videoId);
+        });
+    });
+});
+
+                    </script>
+                  
+
+                </section>
+
+                <a href="coming.html" class="ad"
+                    style="width: 100%; margin-top: 80px;  display: flex; justify-content: center;">
+                    <img src="send/adv.jpg" alt="" width="100%" max-height="130px">
+                </a>
+            </section>
+        </section>
+
+
+        <a href="coming.html" class="ad"
+            style="width: 100%; margin-top: 50px;  display: flex; justify-content: center;">
+            <img src="send/adv.jpg" alt="" width="100%" max-height="130px">
+        </a>
+
+
+        <style>
+            .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 150px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="url"] {
+    width: 48%;
+}
+
+.textarea {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    resize:vertical;
+    border-color: var(--primary-color);
+    background-color: transparent;
+    background-color: var(--primary-color-light-u);
+    transition: bottom 0.4s ease-in-out;
+    /* Smooth transition */
+    backdrop-filter: blur(10px);
+    color: var(--text-color);
+    /* Add blur effect */
+    border-radius: 10px;
+    background-color: var(--sidebar-color);
+    border: 1px solid var(--color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin-top: 20px;
+}
+.textarea:focus{
+    outline: none;
+    border-color: var(--primary-color);
+}
+.input{
+    padding: 15px;
+    color: var(--text);
+    resize:vertical;
+    border-color: var(--primary-color);
+    background-color: transparent;
+    background-color: var(--primary-color-light-u);
+    transition: bottom 0.4s ease-in-out;
+    /* Smooth transition */
+    backdrop-filter: blur(10px);
+    /* Add blur effect */
+    border-radius: 10px;
+    background-color: var(--sidebar-color);
+    color: var(--text-color);
+    border: 1px solid var(--color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+.input:focus{
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload,
+.nag {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: linear-gradient(10deg,#800080, #006eff);
+    color: rgb(251, 250, 250);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.custom-file-upload:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.results-container {
+    width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: var(--text);
+    resize:vertical;
+    border-color: var(--primary-color);
+    background-color: transparent;
+    background-color: var(--primary-color-light-u);
+    transition: bottom 0.4s ease-in-out;
+    /* Smooth transition */
+    border-radius: 10px;
+    background-color: var(--sidebar-color);
+    color: var(--text-color);
+    border: 1px solid var(--color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.comment-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 10px 0;
+}
+
+.comment-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-content {
+    flex-grow: 1;
+    overflow-wrap: break-word;
+}
+
+.delete-btn {
+    cursor: pointer;
+    padding: 10px;
+    transition: .4s ease-in-out;
+    color: azure;
+    border-radius: 10px;
+    background-color: crimson;
+    margin-left: 10px;
+}.delete-btn:hover {
+    background-color: rgb(176, 13, 46);
+}
+
+@media (max-width: 600px) {
+    .rex{
+        max-width: 50px;
+        height: 10px;
+    }
+    .main-container{
+        margin: 70px -15px 10px -15px;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"],
+    .form-row input[type="url"],
+    .textarea,
+    .custom-file-upload {
+        width: 90%;
+        margin: 10px 20px;
+    }
+
+
+
+    .comment-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .comment-item img {
+        margin-bottom: 10px;
+    }
+    .nag{
+        margin-left: 20px;
+    }
+    .delete-btn{
+        margin-left: -2px;
+        margin: 10px 0px 10px -2px;
+    }
+    .maili,
+    .linki,
+    .pag{
+        word-break: break-all;
+    }
+
+}
+.maili,
+.linki{
+    color: var(--text-color);
+    font-size: .8rem;
+}
+.linki{
+    margin-top: 405px;
+}
+.maili:hover,
+.linki:hover{
+    text-decoration: underline;
+}
+.pag{
+    word-break: break-all;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+        </style>
+
+
+
+
+
+        
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const form = document.getElementById('comment-form');
+                const resultsContainer = document.getElementById('results');
+                const localStorageKey = 'commentsData';
+        
+                loadComments();
+        
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    const formData = new FormData(form);
+                    const file = formData.get('user-img');
+                    const name = formData.get('name');
+                    const email = formData.get('email');
+                    const website = formData.get('website');
+                    const comment = formData.get('comment');
+        
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const userImg = e.target.result;
+                        const data = { userImg, name, email, website, comment };
+                        saveComment(data);
+                        addCommentToDOM(data);
+                        form.reset();
+                    };
+                    reader.readAsDataURL(file);
+                });
+        
+                function saveComment(data) {
+                    let comments = JSON.parse(localStorage.getItem(localStorageKey)) || [];
+                    comments.push(data);
+                    localStorage.setItem(localStorageKey, JSON.stringify(comments));
+                }
+        
+                function loadComments() {
+                    const comments = JSON.parse(localStorage.getItem(localStorageKey)) || [];
+                    comments.forEach(addCommentToDOM);
+                }
+        
+                function addCommentToDOM(data) {
+                    const commentItem = document.createElement('div');
+                    commentItem.className = 'comment-item';
+                    commentItem.innerHTML = `
+                        <img src="${data.userImg}" alt="${data.name}'s image">
+                        <div class="comment-content">
+                            <strong>${data.name}</strong> (<a href="mailto:${data.email}" class="maili">${data.email}</a>)<br><br>
+                            ${data.website ? `<a href="${data.website}" target="_blank" class="linki">${data.website}</a><br>` : ''}
+                            <p class="pag">${data.comment}</p>
+                        </div>
+                        <span class="delete-btn">Delete</span>
+                    `;
+                    resultsContainer.appendChild(commentItem);
+        
+                    commentItem.querySelector('.delete-btn').addEventListener('click', function () {
+                        deleteComment(data, commentItem);
+                    });
+                }
+        
+                function deleteComment(data, element) {
+                    let comments = JSON.parse(localStorage.getItem(localStorageKey)) || [];
+                    comments = comments.filter(comment => comment.comment !== data.comment || comment.email !== data.email);
+                    localStorage.setItem(localStorageKey, JSON.stringify(comments));
+                    element.remove();
+                }
+            });
+        </script>
+        
+
+        <div class="main-container">
+            <div class="form-container">
+                <form id="comment-form">
+                    <div class="form-row">
+                        <label for="file-upload" class="custom-file-upload">
+                            Upload Image <i class='bx bx-image-add' style="font-size: 1.1rem; margin-bottom: -15px;"></i>
+                        </label>
+                        <input class="input" id="file-upload" type="file" name="user-img" accept="image/*" required>
+                        <input class="input fer" type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-row">
+                        <input class="input" type="email" name="email" placeholder="Email" required>
+                        <input class="input" type="url" name="website" placeholder="Website">
+                    </div>
+                    <textarea class="textarea" name="comment" placeholder="Comment" required></textarea><br>
+                    <button type="submit" class="nag">Submit</button>
+                </form>
+            </div>
+            <div id="results" class="results-container"></div>
+        </div>
+
+
+
+
+
+
+
+        <a href="coming.html" class="ad"
+            style="width: 100%; margin-top: 50px;  display: flex; justify-content: center;">
+            <img src="send/adv1.jpg" alt="" width="100%" max-height="130px">
+        </a>
+
+
+
+
+        <div class="mar">
+            <marquee behavior="timing" direction="left"><span style="font-weight: 700;">Note:</span> We source music
+                from various websites, including Celebnob.com, Naijafinix.com, Naijaloaded.com, and Trendybeatz.com. We
+                aim to provide a diverse selection of music while supporting the original creators. Visit these sites to
+                discover more music and support the artists...</marquee>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+    </section>
+
+
+    <script src="script.js"></script>
+    <script src="cards.js"></script>
+    <script src="play.js"></script>
+
+</body>
+
+</html>

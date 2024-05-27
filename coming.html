@@ -1,0 +1,316 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== Fav ======== -->
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>BeatsWRLD - download free music</title>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text" style="padding-top: 10px;">
+                <span class="image">
+                    <a href="index.html"><img src="./imgs/logo.png" alt=""></a>
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name" style="
+                        background: linear-gradient(5deg, #FF00FF, #800080);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent; font-size: larger;
+                    "><a href="index.html">BeatsWrld</a></span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle' style="color: #ddd;"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                <a href="index.html" title="Home">
+                    <i class='bx bx-home-alt icon'></i>
+                    <span class="text nav-text">Home</span>
+                </a>
+                </li>
+                </li>
+
+                <ul class="menu-links">
+
+
+                    <li class="nav-link">
+                        <a href="music.html" title="Music">
+                            <i class='bx bx-music icon'></i>
+                            <span class="text nav-text">Music</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="artists.html" title="Artists">
+                            <i class='bx bx-microphone icon'></i>
+                            <span class="text nav-text">Artists</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="albums.html" title="Albums">
+                            <i class='bx bx-album icon'></i>
+                            <span class="text nav-text">Albums</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="mixtapes.html" title="Mixtapes">
+                            <i class='bx bx-headphone icon'></i>
+                            <span class="text nav-text">Mixtapes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" />
+                        <a href="news.html" title="Music News">
+                            <i class='bx bx-radio icon'></i>
+                            <span class="text nav-text">Music News</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <!-- <div class="img">
+            <img src="preview-page1-removebg-preview.png" alt="">
+        </div> -->
+        <section class="container" style="background: var(--body-color);">
+            <header>Comming Soon...</header>
+            <p>
+              Our website is under construction. We're working hard to improve our
+              website and we'll ready to launch after.
+            </p>
+            <div class="time-content">
+              <div class="time days">
+                <span class="number"></span>
+                <span class="textw">days</span>
+              </div>
+              <div class="time hours">
+                <span class="number"></span>
+                <span class="textw">hours</span>
+              </div>
+              <div class="time minutes">
+                <span class="number"></span>
+                <span class="textw">minutes</span>
+              </div>
+              <div class="time seconds">
+                <span class="number"></span>
+                <span class="textw">seconds</span>
+              </div>
+            </div>
+      
+            <div class="email-content">
+              <p>Subscribe now to get the latest updates!</p>
+      
+              <div class="input-box">
+                <input type="email" placeholder="Enter your email" />
+                <button>Notify Me</button>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+          <div class="mar">
+            <marquee behavior="timing" direction="left"><span style="font-weight: 700;">Note:</span> We source music from various websites, including Celebnob.com, Naijafinix.com, Naijaloaded.com, and Trendybeatz.com. We aim to provide a diverse selection of music while supporting the original creators. Visit these sites to discover more music and support the artists...</marquee>
+        </div>
+
+
+    </section>
+
+    <style>
+
+.container {
+  display: flex;
+  row-gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100dvh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container header {
+  font-size: 60px;
+  color: var(--text-color);
+  font-weight: 600;
+  text-align: center;
+}
+.container p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  max-width: 550px;
+  text-align: center;
+}
+.time-content {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+.time-content .time {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.time .number,
+.time .textw {
+  font-weight: 500;
+  color: var(--text-color);
+}
+.time .number {
+  font-size: 40px;
+}
+.time .textw {
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.email-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+}
+.email-content p {
+  font-size: 13px;
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  max-width: 360px;
+  width: 100%;
+  margin-top: 20px;
+  column-gap: 20px;
+}
+.input-box input,
+.input-box button {
+  height: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  background-color: var(--sidebar-color);
+  font-weight: 400;
+}
+.input-box input {
+  width: 100%;
+  padding: 0 15px;
+  color: var(--text-color);
+}
+input::placeholder {
+  color: var(--text-color);
+}
+.input-box button {
+  cursor: pointer;
+  color: var(--text-color);
+  white-space: nowrap;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+}
+.input-box button:hover {
+  background-color: var(--text-color);
+  color: #0d6a81;
+}
+@media screen and (max-width: 450px) {
+  .container header {
+    font-size: 30px;
+  }
+  .input-box{
+    width: 90%;
+  }
+  .container{
+    padding: 10px;
+  }
+}
+
+    </style>
+
+
+    <script>
+        const seconds = document.querySelector(".seconds .number"),
+  minutes = document.querySelector(".minutes .number"),
+  hours = document.querySelector(".hours .number"),
+  days = document.querySelector(".days .number");
+
+let secValue = 11,
+  minValue = 2,
+  hourValue = 5,
+  dayValue = 30;
+
+const timeFunction = setInterval(() => {
+  secValue--;
+
+  if (secValue === 0) {
+    minValue--;
+    secValue = 60;
+  }
+  if (minValue === 0) {
+    hourValue--;
+    minValue = 60;
+  }
+  if (hourValue === 0) {
+    dayValue--;
+    hourValue = 24;
+  }
+
+  if (dayValue === 0) {
+    clearInterval(timeFunction);
+  }
+  seconds.textContent = secValue < 10 ? `0${secValue}` : secValue;
+  minutes.textContent = minValue < 10 ? `0${minValue}` : minValue;
+  hours.textContent = hourValue < 10 ? `0${hourValue}` : hourValue;
+  days.textContent = dayValue < 10 ? `0${dayValue}` : dayValue;
+}, 1000); //1000ms = 1s
+
+    </script>
+    <script src="script.js"></script>
+    <script src="swiper.js"></script>
+    <script src="cards.js"></script>
+    <script src="play.js"></script>
+
+</body>
+
+</html>
